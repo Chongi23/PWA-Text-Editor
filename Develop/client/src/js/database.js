@@ -28,7 +28,7 @@ export const putDb = async (content) => {
   const request = store.add({ content });
   //Get confirmation of the request
   const result = await request;
-    console.log('Data saved to database', result);
+    console.log('Data saved to database', result?.value);
 //What do we need the error for, come back to this
    // console.error('putDb not implemented');
 };
@@ -37,9 +37,9 @@ export const getDb = async () => {
   constjateDb = await openDB('jate', 1);
   const tx = jateDb.transaction('jate', 'readOnly');
   const store = tx.objectStore('jate');
-  const request = store.getAll();
+  const request = store.get(1);
   const result = await request;
-  return result;
+  return result?.value;
 };
 //console.error('getDb not implemented');
 

@@ -12,7 +12,8 @@ module.exports = () => {
     //Entery Point for Files
     entry: {
       main: './src/js/index.js',
-      install: './src/js/install.js'
+      install: './src/js/install.js',
+      
 
     },
     //Output for our bundles
@@ -25,7 +26,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Text Editor'
+        title: 'JATE'
       }),
      //Injects our service worker
       new InjectManifest({
@@ -36,13 +37,13 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Text Editor',
-        short_name: 'Text',
+        name: 'JATE',
+        short_name: 'JATE',
         description: 'Go ahead and type.',
         background_color: '#225ca3',
         theme_color: '#225ca3',
-        start_url: './',
-        publicPath: './',
+        start_url: '/',
+        publicPath: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
