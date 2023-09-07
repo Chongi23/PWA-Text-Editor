@@ -1,5 +1,5 @@
 import { openDB } from 'idb';
-import { javascript } from 'webpack';
+//import { javascript } from 'webpack';
 
 const initdb = async () =>
 //Creating new database named "jate" which will be using version 1 or the database
@@ -34,7 +34,7 @@ export const putDb = async (content) => {
 };
 // TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
-  constjateDb = await openDB('jate', 1);
+  const jateDb = await openDB('jate', 1);
   const tx = jateDb.transaction('jate', 'readOnly');
   const store = tx.objectStore('jate');
   const request = store.get(1);
