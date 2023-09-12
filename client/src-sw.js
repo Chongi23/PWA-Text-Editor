@@ -39,4 +39,4 @@ registerRoute(
   })
 );
 //displayed when the user performs an action that requires a connection but the device is offline
-//offlineFallback();
+offlineFallback();
