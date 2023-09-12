@@ -11,8 +11,8 @@ module.exports = () => {
     mode: 'development',
     //Entry Point for Files
     entry: {
-      main: './src/js/index.js',
-      install: './src/js/install.js',
+      main: '/src/js/index.js',
+      install: '/src/js/install.js',
       
 
     },
