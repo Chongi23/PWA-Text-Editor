@@ -3,6 +3,9 @@
 Heroku app Page:
 https://jate007-467c8e5e4e14.herokuapp.com/
 
+Video Walk-thru:
+https://www.youtube.com/watch?v=ALiIz0XRWuA
+
 
 ## User Story
 
@@ -25,7 +28,10 @@ SO THAT I can reliably retrieve them for later use
 
 ## Running Application
 - From root directory :
-npm run start:dev
+npm run start
+
+## Listen on:
+//http://localhost:3000/  "once npm run start is done"
 
 ## Acceptance Criteria
 
