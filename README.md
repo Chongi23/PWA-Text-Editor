@@ -12,6 +12,21 @@ I WANT to create notes or code snippets with or without an internet connection
 SO THAT I can reliably retrieve them for later use
 ```
 
+## Required Packages
+(CLIENT)
+- "idb"
+- "code-mirror-themes"
+(SERVER)
+- "express"
+(MAIN)
+- "express"
+- "if-env"
+- "nodemon"
+
+## Running Application
+- From root directory :
+npm run start:dev
+
 ## Acceptance Criteria
 
 ```md
